@@ -1,0 +1,12 @@
+name = 'poysa-proxy'
+main = "src/worker.js"
+workers_dev = true
+compatibility_date = "2025-07-31"
+
+# Environment variables (set these via wrangler secret put)
+# wrangler secret put SUPABASE_URL
+# wrangler secret put SUPABASE_KEY
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
